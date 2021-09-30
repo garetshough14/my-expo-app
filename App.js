@@ -6,8 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Text style={styles.green}>
-        Home <br />
+      <Text style={styles.green}>Home<br />
         <Text>About</Text> <br />
         <Text>Contact</Text> <br />
         <Text>FAQ</Text>
@@ -33,11 +32,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   green: {
+    fontSize: '25px',
     display: 'flex',
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
-    borderWidth: '1px',
+    borderTopWidth: '1px',
+    borderBottomWidth: '2px',
+    borderLeftWidth: '2px',
+    borderRightWidth: '2px',
     top: 10,
     position: 'absolute',
     borderRadius: '10px',
@@ -49,6 +52,9 @@ const styles = StyleSheet.create({
     width:'100%',
     height: '100%',
     backgroundColor: 'red',
+    display: 'flex',
+    fontSize: '30px',
+    alignItems: 'center',
   },
   purple: {
     width:'100%',
@@ -61,6 +67,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    width: '300px',
+    height: '400px',
     backgroundColor: 'Blue',
   }
 });
